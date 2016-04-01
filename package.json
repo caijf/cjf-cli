@@ -1,0 +1,23 @@
+{
+    "name": "cjf",
+    "version": "0.1.0",
+    "main": "index.js",
+    "bin": {
+        "cjf": "bin/cjf-cli.js"
+    },
+    "dependencies": {
+        "fis3": "^3.3.21",
+        "fis-parser-less": "^0.1.3",
+        "fis-postprocessor-cssautoprefixer": "^0.1.0",
+        "fis3-postpackager-loader": "^1.3.13",
+        "liftoff": "^2.2.1",
+        "minimist": "^1.2.0"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": {
+        "name": "caijf"
+    },
+    "license": "ISC"
+}
