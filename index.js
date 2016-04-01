@@ -129,8 +129,8 @@ fis.match('::package', {
 fis.match('*.{css,less,html:css,html:less}', {
     postprocessor: fis.plugin('cssautoprefixer')
 })
-// less文件不发布
-.match('*.less', {
+// 下划线开头的 less文件不发布
+.match('_*.less', {
     release: false
 })
 // parser less
@@ -147,7 +147,7 @@ fis.match('*.{css,less,html:css,html:less}', {
 //     })
 // })
 // release
-.match('less/(lifehacker).less', {
+.match('/less/(**.{less,css})', {
     release: '/static/css/$1'
 });
 //---------- css process end ----------//
@@ -155,7 +155,7 @@ fis.match('*.{css,less,html:css,html:less}', {
 
 //---------- image process start ----------//
 // png 压缩
-fis.match('*.png', {
+fis.match('/images/*.png', {
   optimizer: fis.plugin('png-compressor')
 })
 // release

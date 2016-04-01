@@ -2,6 +2,7 @@
 
 
 - less预编译
+- css prefix
 - 静态资源压缩（css、js、png）
 
 
@@ -127,7 +128,7 @@ cjf server clean
 
 ##less
 
-- 自动过滤less文件
+- 过滤下划线开头命名的less文件
 - html中内联less执行编译
 
 ```
